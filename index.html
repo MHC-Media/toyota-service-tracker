@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://*.googleusercontent.com; base-uri 'none'; form-action 'self'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <title>Toyota Service Tracker</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <div id="boot" class="content" role="status"><div class="empty"><h3>Memuat aplikasi…</h3></div></div>
+  <div class="app hidden" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navigasi utama"></aside>
+    <div class="main-col">
+      <header class="topbar" id="topbar"></header>
+      <main id="main" class="content" tabindex="-1"></main>
+      <footer class="footer">Toyota Service Tracker adalah aplikasi independen dan bukan produk resmi PT Toyota-Astra Motor / Toyota Motor Corporation. Jadwal "Belum diverifikasi" bukan jadwal resmi.</footer>
+    </div>
+  </div>
+  <div id="overlay" class="overlay hidden"></div>
+  <script src="assets/vendor/chart.umd.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

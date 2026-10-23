@@ -1,0 +1,54 @@
+/* variables.css — token desain. Aksen merah otomotif orisinal (bukan logo/warna merek resmi). */
+:root {
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --surface-2: #f8f9fb;
+  --border: #e3e6ea;
+  --border-strong: #c9cfd6;
+  --text: #16191d;
+  --text-2: #4a525c;
+  --text-3: #6b7480;
+  --accent: #c8102e;
+  --accent-hover: #a50d26;
+  --accent-soft: #fdecef;
+  --on-accent: #ffffff;
+  --focus: #1d4ed8;
+
+  --ok: #176f4a;        --ok-bg: #e3f4ec;
+  --info: #1d4ed8;      --info-bg: #e6eefc;
+  --warn: #8a5a00;      --warn-bg: #fdf0d2;
+  --due: #a14500;       --due-bg: #fde6d3;
+  --bad: #b3162b;       --bad-bg: #fde4e7;
+  --muted: #4f5863;     --muted-bg: #eceef1;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 1px 3px rgba(16, 24, 40, .06);
+  --shadow-lg: 0 12px 32px rgba(16, 24, 40, .18);
+  --sidebar-w: 256px;
+  --header-h: 64px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+
+  /* palet grafik ramah buta warna (Okabe-Ito) */
+  --c1: #0072b2; --c2: #e69f00; --c3: #009e73; --c4: #cc79a7;
+  --c5: #56b4e9; --c6: #d55e00; --c7: #f0e442; --c8: #7a828c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1216; --surface: #171b21; --surface-2: #1d222a;
+    --border: #2a313b; --border-strong: #3a424e;
+    --text: #eef0f3; --text-2: #b8bfc9; --text-3: #8d96a3;
+    --accent: #ef4458; --accent-hover: #ff6477; --accent-soft: #3a1620; --on-accent: #12080a;
+    --focus: #7aa2ff;
+    --ok: #55d6a0; --ok-bg: #12301f;
+    --info: #8db1ff; --info-bg: #162545;
+    --warn: #f0c14b; --warn-bg: #3a2c08;
+    --due: #ffa862; --due-bg: #3d210a;
+    --bad: #ff8a98; --bad-bg: #44121b;
+    --muted: #b8bfc9; --muted-bg: #262c35;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, .6);
+  }
+}

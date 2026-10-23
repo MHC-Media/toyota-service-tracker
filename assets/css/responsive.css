@@ -1,0 +1,28 @@
+/* responsive.css — tablet & ponsel */
+@media (max-width: 1100px) {
+  .span-4, .span-5, .span-6, .span-7, .span-8 { grid-column: span 12; }
+}
+@media (max-width: 900px) {
+  .app { grid-template-columns: minmax(0, 1fr); }
+  .sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: min(288px, 86vw); z-index: 50; transform: translateX(-102%); transition: transform .25s var(--ease); box-shadow: var(--shadow-lg); }
+  .sidebar.open { transform: none; }
+  .menu-btn { display: inline-flex; }
+  .topbar { padding: 0 14px; }
+  .content { padding: 16px 14px; }
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .kv { grid-template-columns: 1fr; gap: 2px 0; } .kv dt { margin-top: 8px; }
+  .user-name { display: none; }
+}
+@media (max-width: 640px) {
+  table.stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  table.stack, table.stack tbody, table.stack tr, table.stack td { display: block; width: 100%; }
+  table.stack tr { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  table.stack td { border: 0; padding: 4px 0; display: flex; justify-content: space-between; gap: 12px; text-align: right; }
+  table.stack td::before { content: attr(data-label); font-size: .74rem; text-transform: uppercase; color: var(--text-3); letter-spacing: .05em; text-align: left; flex: none; padding-top: 2px; }
+  table.stack td.td-actions { justify-content: flex-end; }
+  table.stack td.td-actions::before { display: none; }
+  .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .kpi-value { font-size: 1.5rem; }
+  .chart-box { height: 230px; }
+  .toolbar .field { min-width: 0; flex: 1 1 100%; }
+}

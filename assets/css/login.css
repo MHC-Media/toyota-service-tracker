@@ -1,0 +1,19 @@
+/* login.css */
+body { background: var(--bg); }
+.login-shell { min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+.login-hero { background: linear-gradient(150deg, #1b1e23, #3a0a14 70%, var(--accent)); color: #fff; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
+.login-hero .brand-name small { color: rgba(255,255,255,.7); }
+.login-hero h2 { font-size: 2rem; max-width: 18ch; line-height: 1.15; }
+.login-hero ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; color: rgba(255,255,255,.85); }
+.login-card { align-self: center; justify-self: center; width: min(420px, calc(100vw - 32px)); padding: 28px; margin: 24px 0; }
+.login-card h1 { margin: 6px 0 16px; }
+.login-card .brand { padding: 0 0 12px; }
+.login-card .field + .field { margin-top: 14px; }
+#form-error { margin-top: 14px; }
+@media (max-width: 860px) {
+  .login-shell { grid-template-columns: minmax(0, 1fr); }
+  .login-hero { display: none; }
+  .login-card { margin: 8vh auto; }
+}
+.btn-block { width: 100%; margin-top: 18px; min-height: 46px; }
+.small-note { margin-top: 16px; font-size: .82rem; }

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://*.googleusercontent.com; base-uri 'none'; form-action 'self'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <title>Masuk — Toyota Service Tracker</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+  <main class="login-shell" id="main">
+    <section class="login-hero" aria-hidden="true">
+      <div class="brand"><div class="brand-mark" id="hero-mark"></div><div class="brand-name">Service Tracker<small>Perawatan kendaraan terpantau</small></div></div>
+      <h2>Jadwal servis, riwayat, dan pengingat dalam satu tempat.</h2>
+      <ul>
+        <li>Riwayat servis kronologis per kendaraan</li>
+        <li>Rekomendasi perawatan dari aturan yang dapat diverifikasi</li>
+        <li>Status aman, mendekati, jatuh tempo, atau terlambat</li>
+      </ul>
+    </section>
+    <section class="login-card card">
+      <div class="brand"><div class="brand-mark" id="card-mark"></div><div class="brand-name">Toyota Service Tracker<small>Masuk ke akun Anda</small></div></div>
+      <h1>Masuk</h1>
+      <div id="notice"></div>
+      <form id="login-form" novalidate>
+        <div class="field"><label for="identifier">Username atau email</label>
+          <input class="input" id="identifier" name="identifier" autocomplete="username" autocapitalize="none" spellcheck="false" required></div>
+        <div class="field"><label for="password">Password</label>
+          <div class="input-wrap"><input class="input" id="password" name="password" type="password" autocomplete="current-password" required>
+            <button class="btn btn-ghost btn-icon" type="button" id="toggle-pw" aria-label="Tampilkan password" aria-pressed="false"></button></div></div>
+        <div id="form-error" role="alert" class="hidden"></div>
+        <button class="btn btn-primary btn-block" id="submit" type="submit">Masuk</button>
+      </form>
+      <p class="muted small-note">Lupa password? Hubungi admin untuk reset akses. Aplikasi independen, bukan produk resmi Toyota.</p>
+    </section>
+  </main>
+  <script type="module" src="assets/js/login.js"></script>
+</body>
+</html>
